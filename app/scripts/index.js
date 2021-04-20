@@ -6,7 +6,8 @@ window.$ = window.jQuery = jquery;
 // Modules
 import search from "./modules/search";
 
-console.log('yor')
+console.log('yord')
+
 
 $(document).ready(function() {
   search.init();

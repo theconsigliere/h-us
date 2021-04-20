@@ -4,7 +4,6 @@
     {% comment %}Begin Product Top{% endcomment %}
     <div id="product-top">
 
-
         <div class="product-top-inner">
             <div class="product-images js-product-slideshow">
 
@@ -20,6 +19,7 @@
                         </div>
                     {% endfor %}
                 </div>
+                
 
                 <div class="slider-nav">
                     {% for image in product.images %}
@@ -31,6 +31,7 @@
                             <img data-src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}" class='lazyload'>
                         </div>
                     {% endfor %}
+
 
                 </div>
                 {% comment %}

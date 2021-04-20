@@ -18,7 +18,7 @@
     "uglify-js": "^3.7.2"
   },
   "scripts": {
-    "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch\" ",
+    "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch --allow-live\" ",
     "build": "parcel build app/scripts/index.js --out-dir ./assets --out-file bundle.min.js --no-source-maps && parcel build app/styles/index.scss --out-dir ./assets --out-file style.min.css --no-source-maps",
     "clean": "rm -rf ./node_modules && rm -rf /.cache && rm -rf ./assets/bundle.min.map && rm -rf ./assets/style.min.js && rm -rf ./assets/style.min.map",
     "deploy": "yarn && yarn build && yarn clean && theme deploy"

@@ -1,4 +1,5 @@
-const collectionProduct = ".collection-list.collection-products"
+const dragScroll = () => {
+    const collectionProduct = ".collection-list.collection-products"
 
 if (collectionProduct) {
     
@@ -20,11 +21,14 @@ $.fn.attachDragger = function(){
         attachment = false;
     });
 }
+}
 
 
 $(document).ready(function(){
     $(collectionProduct).attachDragger();
    });
-
-
 }
+
+
+
+

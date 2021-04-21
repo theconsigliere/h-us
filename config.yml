@@ -1,6 +1,6 @@
 development:
   password: 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
-  theme_id: "122221592747"
+  theme_id: 122221592747
   store: hornit-usa.myshopify.com
   ignore_files:
-  - config/settings_data.json
+    - config/settings_data.json

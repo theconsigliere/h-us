@@ -1,6 +1,8 @@
 // ADD TO CART FORM
 //--------------------------------------------------------------------------------------------------------------
 
+const addToCartFile = () => {
+
 // Add to Cart Form
 let addToCartFormSelector = "#add-to-cart-form",
   // jquery [name*=option] selects any html component ie select, radio with name = option
@@ -549,3 +551,9 @@ var crossellingSection = function() {
 
 // fetch reccomendations on page load
 crossellingSection();
+
+
+}
+
+
+export default addToCartFile

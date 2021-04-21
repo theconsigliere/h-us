@@ -1,4 +1,5 @@
-const mobile = document.querySelector('.mobile-menu-icon')
+const header = () => {
+  const mobile = document.querySelector('.mobile-menu-icon')
 const mobileNav = document.querySelector('.mobile-nav')
 const toggleIcon = document.getElementById('toggle');
 
@@ -19,7 +20,6 @@ const megaMenus = document.querySelectorAll('.mega-menu-full')
 
 
 function handleNavClick(event) {
-
 
 
   // console.log(this.getElementsByClassName('mega-menu-full')[0] )
@@ -72,10 +72,12 @@ navItems.forEach(navItem => navItem.addEventListener('click', handleNavClick));
 
 const megaGroups = document.querySelectorAll('.mega-menu-group')
 
-
 // on page load hide mega menu
 window.onload = function () {
   megaGroups.forEach(menu => {
     menu.style.display = 'none !important';
   })
 };
+}
+
+export default header

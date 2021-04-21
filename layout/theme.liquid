@@ -13,6 +13,17 @@
           {% if settings.favicon != blank %}
           <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
       {% endif %}
+   <!-- yotpo -->
+      <script type="text/javascript">
+        (function e() {
+            var e = document.createElement("script");
+            e.type = "text/javascript",
+            e.async = true,
+            e.src = "//staticw2.yotpo.com/sUnimvLjrmNljb4x2eC8Lp5UJNikQuyGNVKTalTh/widget.js";
+            var t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        })();
+    </script>
 </head>
 <body>
   {% include "header" %}
@@ -29,6 +40,12 @@
 
   {% render 'preorder-now' %}
 
+  <script>
+    {% capture content %}{% include 'quickview' %}{% endcapture %}
+    var content = {{ content | json }};
+  </script>
+
+  <script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
 </body>
 </html>
 

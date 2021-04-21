@@ -1,6 +1,3 @@
-/*global $, document, alert*/
-
-(function () {
 
   // Track multiple players on the page
   var bbplayers = [];
@@ -349,4 +346,3 @@
     );
   });
 
-}());

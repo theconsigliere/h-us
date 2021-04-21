@@ -1,3 +1,4 @@
+const video = () => {
 
 const videoButton = document.querySelectorAll('.js-video')
 const videoPopGroup = document.querySelectorAll('.video-pop-up-group')
@@ -74,3 +75,6 @@ closePopup.forEach( close => {
         })
      })
  })
+}
+
+export default video

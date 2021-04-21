@@ -1,7 +1,7 @@
-// INTERSECTION OBSERVER
+const animation = () => {
+  // INTERSECTION OBSERVER
 const titleGroup = document.querySelectorAll('h3, h4, .kids-header-font')
 const pTags = document.querySelectorAll('.p-fade')
-
 
 
 // Config intersection observer
@@ -34,3 +34,7 @@ let observer = new IntersectionObserver((entries) => {
 })
 
 
+
+}
+
+export default animation

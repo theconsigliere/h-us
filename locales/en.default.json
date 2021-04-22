@@ -77,8 +77,8 @@
     "confidence": {
       "warranty": "Warranty",
       "warranty_desc": "As standard with all products",
-      "uk_delivery": "Free UK Delivery",
-      "uk_delivery_desc": "When you spend over £14.50",
+      "uk_delivery": "Free US Delivery",
+      "uk_delivery_desc": "When you spend over $45",
       "money": "Money Back Guarantee",
       "money_desc": "Free 60-day return policy"
     },

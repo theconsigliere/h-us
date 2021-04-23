@@ -40,7 +40,7 @@ function handleNavClick(event) {
     })
 
     thisMenu.classList.remove('js-display')
-    console.log('contains')
+   // console.log('contains')
 
 
   } else {
@@ -59,7 +59,7 @@ function handleNavClick(event) {
 
     this.classList.add('yellow-nav-item')
 
-    console.log('doesnt contain')
+   // console.log('doesnt contain')
     thisMenu.classList.add('js-display')
 
   }

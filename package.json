@@ -6,6 +6,7 @@
   "author": "Chase Ohlson",
   "license": "MIT",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@vimeo/player": "^2.15.0",
     "autoprefixer": "^9.7.3",
     "babel-core": "^6.26.3",
@@ -24,11 +25,10 @@
     "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch --allow-live\" ",
     "build": "parcel build app/scripts/index.js --out-dir ./assets --out-file bundle.min.js --no-source-maps && parcel build app/styles/index.scss --out-dir ./assets --out-file style.min.css --no-source-maps",
     "clean": "rm -rf ./node_modules && rm -rf /.cache && rm -rf ./assets/bundle.min.map && rm -rf ./assets/style.min.js && rm -rf ./assets/style.min.map",
-    "deploy": "yarn && yarn build && yarn clean && theme deploy"
+    "deploy": "yarn && yarn build && yarn clean && theme deploy --allow-live"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "fancybox": "^3.0.1",
     "sass": "^1.23.7"
   }
 }

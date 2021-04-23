@@ -63,7 +63,10 @@ let productForm = {
       formattedVariantPrice,
       priceHtml;
     // add email when available button
-    $emailButton = $form.find('#mhaRnProduct')
+    if ($form.find('#mhaRnProduct')) {
+      $emailButton = $form.find('#mhaRnProduct')
+    }
+  
 
 
     // when we have variant amke sure we have the correct price

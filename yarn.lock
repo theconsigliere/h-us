@@ -2943,10 +2943,10 @@ falafel@^2.1.0:
     isarray "^2.0.1"
     object-keys "^1.0.6"
 
-fancybox@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/fancybox/-/fancybox-3.0.1.tgz#13f6927449157ed026c69e78c2ba5bf0f1da9af7"
-  integrity sha512-HZ57O6j5Zk4Uvusd5pNUgWi7CCjKx+HFlCzjMPeRJ//0bQWUK+xVpkn3EzXWJate4ZSKNFP9kU2l49MP1g+oow==
+fancybox@^2.1.5:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/fancybox/-/fancybox-2.1.8.tgz#413bc147d7bd54584f5b233f6d8d91ce6adfae66"
+  integrity sha1-QTvBR9e9VFhPWyM/bY2RzmrfrmY=
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"

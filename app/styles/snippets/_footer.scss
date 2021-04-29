@@ -12,7 +12,6 @@
     background: $black;
     padding: 5vh $offset-global;
     @include space-center-column;
-
     @media (min-width: #{$screen-lg}) {
       @include space-flexstart-row;
       padding-top: 10vh;

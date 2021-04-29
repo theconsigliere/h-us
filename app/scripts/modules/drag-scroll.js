@@ -3,7 +3,6 @@ const dragScroll = () => {
 
 if (collectionProduct) {
     
-
 $.fn.attachDragger = function(){
     var attachment = false, lastPosition, position, difference;
     $( $(this).selector ).on("mousedown mouseup mousemove",function(e){

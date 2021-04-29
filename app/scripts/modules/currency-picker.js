@@ -1,5 +1,5 @@
 const currencyPickerFull = () => {
-  // Currency Global Variables
+
 //
 // CURRENCY PICKER
 //-----------------------------------------------------------------------------------------------------

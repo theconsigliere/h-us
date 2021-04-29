@@ -6,8 +6,6 @@ const videoPopup = document.querySelectorAll('.pop-up-video')
 const closePopup = document.querySelectorAll('.pop-up-close')
 
 
-
-
 function displayVideoPopUp(event) {
 
     const button = event.currentTarget;

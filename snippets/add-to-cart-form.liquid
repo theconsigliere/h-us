@@ -119,6 +119,7 @@
 
 {% else %}
 
+
 		<button type="submit" name="add" id="add-to-cart-button" class="button-cta block-button" {% if can_add_to_cart != true %} disabled {% endif %}>
 			{{ 'product.form.submit' | t }}
 			&ndash;
@@ -140,7 +141,6 @@
 <!-- if Product out of stock  (see application.js)-->
 
 {% if can_add_to_cart != true %}
-
 
 <div id='mhaRnProduct'></div>
 

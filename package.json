@@ -6,13 +6,13 @@
   "author": "Chase Ohlson",
   "license": "MIT",
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
     "@vimeo/player": "^2.15.0",
     "autoprefixer": "^9.7.3",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "concurrently": "^5.0.2",
+    "fancybox": "^2.1.5",
     "jquery": "^3.3.1",
     "lazysizes": "^5.3.2",
     "parcel-bundler": "^1.12.4",
@@ -22,8 +22,8 @@
     "uglify-js": "^3.7.2"
   },
   "scripts": {
-    "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch --allow-live\" ",
-    "build": "parcel build app/scripts/index.js --out-dir ./assets --out-file bundle.min.js --no-source-maps && parcel build app/styles/index.scss --out-dir ./assets --out-file style.min.css --no-source-maps",
+    "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css --public-url ./\" \"theme watch --allow-live\" ",
+    "build": "parcel build app/scripts/index.js  --out-dir ./assets --out-file bundle.min.js --no-source-maps && parcel build app/styles/index.scss --out-dir ./assets --out-file style.min.css --no-source-maps --public-url ./",
     "clean": "rm -rf ./node_modules && rm -rf /.cache && rm -rf ./assets/bundle.min.map && rm -rf ./assets/style.min.js && rm -rf ./assets/style.min.map",
     "deploy": "yarn && yarn build && yarn clean && theme deploy --allow-live"
   },

@@ -106,15 +106,10 @@
                                 <span class="bb-trackTitle"></span>
                             </div>
                             <audio>
-
-                                {% assign separator = "|###|" %}
-                                {% assign music_player_mp3_array = product.metafields.custom_fields["music_player_mp3"] | split: separator %}
-                                {% assign fc_keys = product.metafields.custom_fields["music_player_group"] | split: "," %}
-                                {% for i in fc_keys %}
-                                    {% assign index = i | plus: 0 %}
-                                    <source src="{{ music_player_mp3_array[index] }}" type="audio/mp3"/>
-                                {% endfor %}
-
+                                {% assign fc_keys = product.metafields.custom_fields["music_player_group"] %}
+                                {% for mp3 in fc_keys %}
+                                <source src=" {{ mp3.music_player_mp3  | escape }}" type="audio/mp3"/>
+                              {% endfor %}
                             </audio>
                         </div>
 
